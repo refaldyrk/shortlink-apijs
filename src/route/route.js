@@ -6,6 +6,8 @@ const route = express.Router()
 
 //Import Controller
 import controller from '../controller/controller.js'
+
+//Import Log
 import log from '../middleware/logRoute.js'
 
 route.post("/service", controller.post)
