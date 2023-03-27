@@ -27,7 +27,7 @@ app.use(express.json())
 //Add Middleware Log
 app.use(logMiddleware.log)
 
-app.use("/short",routerShort)
+app.use(routerShort)
 
 //Create Endpoint Health-Check
 app.get("/api/health-check", HealthCheck)

@@ -12,7 +12,7 @@ import log from '../middleware/logRoute.js'
 
 route.post("/service", controller.post)
 
-route.get("/service/:shortid", controller.find)
+route.get("/:shortid", controller.find)
 
 route.use(log.log)
 
