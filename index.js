@@ -32,6 +32,11 @@ app.use(routerShort)
 //Create Endpoint Health-Check
 app.get("/api/health-check", HealthCheck)
 
+//Create Index.Html Route
+app.get('/', function(req, res) {
+    res.sendFile(process.env.MY_HTML);
+  });
+
 //Mongo Connection
 mongoConn.mongoConn()
 
